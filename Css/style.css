@@ -71,16 +71,62 @@
     margin-top: -2.8%;
 }
 
-@media only screen and (max-device-width: 1024px) {
-
-    #Logo{
-        padding-left: 22%;
+@media only screen and (max-device-width: 1366px) {
+    #Imagem{
+        height: 170px;
     }
 
+    #Logo{
+        padding-left: 18%;
+    }
+
+    #C{
+        position: relative;
+        padding-left: 30%;
+        margin: 0;
+        margin-top: -4.5%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: white;
+        text-align: center;
+    }
+    
+    #C1{
+        padding-left: 30%;
+        text-align: center;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif Regular;
+        font-size: 18px;
+        color: white;
+    }
+    
+    #Img-Camp{
+        background-color: turquoise;
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        position: relative;
+        margin-left: 53%;
+        margin-top: -4%;
+    }
+
+    #Cabecalho a{  
+        margin-left: 15px;
+        color: white;
+        font-family: Helvetica, Arial, sans-serif; 
+        padding: 8px 70px;
+        text-decoration: none;
+        background-color: #ffcdb2;
+    }
+}
+
+@media only screen and (max-device-width: 1024px) {
     #Imagem{
-        width: 100%;
-        background-color: #ff9b64;
-        height: 260px;
+        height: 170px;
+    }
+
+    #Logo{
+        padding-left: 18%;
     }
 
     #C{
@@ -155,17 +201,14 @@
     }
 }
 
-@media only screen and (max-device-width: 768px) {
-
-    #Imagem{
-        width: 100%;
-        background-color: #ff9b64;
-        height: 260px;
+@media only screen and (max-device-width: 823px) {
+    #Logo{
+        padding-left: 10%;
     }
 
     #C{
         position: relative;
-        padding-left: 50%;
+        padding-left: 40%;
         margin: 0;
         margin-top: -8%;
         font-family: Arial, Helvetica, sans-serif;
@@ -175,7 +218,47 @@
     }
     
     #C1{
-        padding-left: 50%;
+        padding-left: 40%;
+        text-align: center;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif Regular;
+        font-size: 18px;
+        color: white;
+    }
+    
+    #Img-Camp{
+        background-color: turquoise;
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        position: relative;
+        margin-left: 50%;
+        margin-top: -5.8%;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    #Imagem{
+        height: 170px;
+    }
+    
+    #Logo{
+        padding-left: 12%;
+    }
+
+    #C{
+        position: relative;
+        padding-left: 53%;
+        margin: 0;
+        margin-top: -8%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: white;
+        text-align: center;
+    }
+    
+    #C1{
+        padding-left: 53%;
         text-align: center;
         margin: 0;
         font-family: Arial, Helvetica, sans-serif Regular;
@@ -203,12 +286,59 @@
     }
 }
 
-@media only screen and (max-device-width: 640px) {
-
+@media only screen and (max-device-width: 667px) {
+    
     #Imagem{
-        width: 100%;
-        background-color: #ff9b64;
         height: 260px;
+    }
+
+    #C{
+        position: relative;
+        padding-left: 1%;
+        margin: 0;
+        margin-top: -4%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: white;
+        text-align: center;
+    }
+    
+    #C1{
+        padding-left: 1%;
+        text-align: center;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif Regular;
+        font-size: 18px;
+        color: white;
+    }
+    
+    #Img-Camp{
+        background-color: turquoise;
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        position: relative;
+        margin-left: 45%;
+        margin-top: 8px;
+    }
+
+    #Cabecalho a{  
+        margin-left: 15px;
+        color: white;
+        font-family: Helvetica, Arial, sans-serif; 
+        padding: 8px 70px;
+        text-decoration: none;
+        background-color: #ffcdb2;
+    }
+
+    #Logo{
+        padding-left: 32%;
+    }
+}
+
+@media only screen and (max-device-width: 640px) {
+    #Imagem{
+        height: 250px;
     }
 
     #C{
@@ -256,11 +386,8 @@
 }
 
 @media only screen and (max-device-width: 540px) {
-
     #Imagem{
-        width: 100%;
-        background-color: #ff9b64;
-        height: 260px;
+        height: 250px;
     }
 
     #C{
@@ -308,15 +435,12 @@
 }
 
 @media only screen and (max-device-width: 414px) {
+    #Imagem{
+        height: 260px;
+    }
 
     #Logo{
         padding-left: 22%;
-    }
-
-    #Imagem{
-        width: 100%;
-        background-color: #ff9b64;
-        height: 260px;
     }
 
     #C{
@@ -366,10 +490,7 @@
 }
 
 @media only screen and (max-device-width: 360px) {
-
     #Imagem{
-        width: 100%;
-        background-color: #ff9b64;
         height: 260px;
     }
 
