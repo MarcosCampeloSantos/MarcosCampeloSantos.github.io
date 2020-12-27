@@ -2,7 +2,9 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link href="Css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="Scripts/Menus.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste</title>
 </head>
@@ -22,23 +24,33 @@
             <hr id="Linha">
             <div id="Menu_Rolavel">
                 <ul id="Menu">
-                    <li>
-                        <a href="#">Planejamento</a>
+                    <li id="Menu_Planej">
+                        <a id="Planejamento" class="bt1" href="javascript://">Planejamento</a>
+                        <ul id="Sub_Planej" class="ul1">
+                            <li id="Menu_Sub_Planej1"><a href="#">Teste</a></li>
+                            <li id="Menu_Sub_Planej2"><a href="#">Teste</a></li>
+                            <li id="Menu_Sub_Planej3"><a href="#">Teste</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="#">Cadastro</a>
+                    <li id="Menu_Cad">
+                        <a id="Cadastro" class="bt2" href="#">Cadastro</a>
+                        <ul id="Sub_Cad" class="ul2">
+                            <li id="Menu_Sub_Cad1"><a href="#">Teste</a></li>
+                            <li id="Menu_Sub_Cad2"><a href="#">Teste</a></li>
+                            <li id="Menu_Sub_Cad3"><a href="#">Teste</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="#">Pedido</a>
+                    <li id="Menu_Pedi">
+                        <a id="Pedido" href="#">Pedido</a>
                     </li>
-                    <li>
-                        <a href="#">Financeiro</a>
+                    <li id="Menu_Finan">
+                        <a id="Financeiro" href="#">Financeiro</a>
                     </li>
-                    <li>
-                        <a href="#">Relatorio</a>
+                    <li id="Menu_Rela">
+                        <a id="Relatorio" href="#">Relatorio</a>
                     </li>
-                    <li>
-                        <a href="#">Entregas</a>
+                    <li id="Menu_Entre">
+                        <a id="Entregas" href="#">Entregas</a>
                     </li>
                 </ul>
             </div>

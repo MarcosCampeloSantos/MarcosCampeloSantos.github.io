@@ -64,21 +64,51 @@
     overflow-y: auto;
 }
 
-#Menu li{
+#Menu_Planej, #Menu_Cad, #Menu_Pedi, #Menu_Finan, #Menu_Rela, #Menu_Entre{
     margin-top: 10px;
     margin-left: 20px;
     list-style-type: none;
 }
 
-#Menu li a{
+#Planejamento, #Cadastro, #Pedido, #Financeiro, #Relatorio, #Entregas{
     color: white;
     background-color: #ffcdb2;
     font-family: Helvetica, Arial, sans-serif;
-    padding: 8px 60px;
+    padding: 8px 30px;
     border-radius: 100px;
     text-decoration: none;
 }
 
 #Menu li a:hover{
     background-color: tomato;
+}
+
+#Sub_Planej, #Sub_Cad{
+    background-color: tomato;
+    position: absolute;
+    border-radius: 10px;
+    width: 120px;
+    margin-top: 10px;
+}
+
+#Menu_Sub_Planej1, #Menu_Sub_Planej2, #Menu_Sub_Planej3, #Menu_Sub_Cad1, #Menu_Sub_Cad2, #Menu_Sub_Cad3{
+    width: 100%;
+    font-size: 18px;
+    font-family: Helvetica, Arial, sans-serif;
+    list-style-type: none;
+    
+}
+
+#Sub_Planej li a{
+    text-decoration: none;
+}
+
+.ul1{
+    position: relative;
+    display: none;
+}
+
+.ul2{
+    position: relative;
+    display: none;
 }
