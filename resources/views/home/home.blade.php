@@ -111,18 +111,23 @@
                 <div class="modal-body">
                     <div class="bg-white rounded-3 mx-auto">
                         <div class="mx-auto">
-                            <form action="post">
+                            <form action="cadastrar" method="POST">
+                                @csrf
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="nome" name="nome" aria-describedby="emailHelp">
+                                </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <input type="password" class="form-control" id="senha" name="senha">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <input type="password" class="form-control" id="Csenha" name="Csenha">
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-azulclaro1 text-white" data-bs-dismiss="modal">Cancelar</button>
@@ -136,17 +141,17 @@
             </div>
         </div>
          <!--Modal Login-->
-         <div class="modal fade" data-bs-backdrop="static" id="ModalLogin" tabindex="-1" aria-labelledby="ModalLogin" aria-hidden="true">
+        <div class="modal fade" data-bs-backdrop="static" id="ModalLogin" tabindex="-1" aria-labelledby="ModalLogin" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title display-4 text-center fs-1" id="ModalLogin">Entrar</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title display-4 text-center fs-1" id="ModalLogin">Entrar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="bg-white rounded-3 mx-auto">
                         <div class="mx-auto">
-                            <form action="post">
+                            <form action="/login" method="GET">
                                 <div class="mb-3">
                                     <label for="InputEmail" class="form-label">Email address</label>
                                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">

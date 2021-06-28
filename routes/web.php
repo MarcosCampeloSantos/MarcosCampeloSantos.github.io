@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RegistroController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,5 @@ Route::get('/', function () {
     return view('home.home');
 });
 
-Route::get('/registro', function(){
-    return view('home.registro');
-});
+Route::post('/cadastrar', [RegistroController::class, 'cadastrarUsuario']);
+
