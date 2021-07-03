@@ -4,8 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Script de Validação-->
+        <script>
+            function validar(){
+                var senha = formCad.senha.value;
+                var csenha = formCad.Csenha.value;
+
+                if(csenha == senha){
+                    formCad.submit();
+                }
+                else{
+                    document.getElementById('alertasenha').style.display = 'block';
+                }
+            }
+        </script>
         <!--Bootatrap-->
-        <link rel="stylesheet" href="{{ url(mix('site/css/style.css')) }}"">
+        <link rel="stylesheet" href="{{ url(mix('site/css/style.css')) }}">
         <!--jQuery & Bootstrap-->
         <script src="{{ url(mix('site/js/scripts.js'))}}"></script>
         <!--Corpo da Pagina Principal-->
@@ -49,26 +63,12 @@
             </nav>
         </div>
         <!--Conteudo-->
-        <div class="container-fluid">
-            <h1 class="text-center display-5 text-white">Conteudo</h1>
-        </div>
-        <div class="mx-auto w-75 bg-white rounded-3">
-            <div class="pt-2">
-                <div class="card mb-3 mx-auto" style="max-width: 540px;">
-                    <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div>
+        <div>
+            <div class="container-fluid">
+                <h1 class="text-center display-5 text-white">Conteudo</h1>
+            </div>
+            <div class="mx-auto w-75 bg-white rounded-3">
+                <div class="pt-2">
                     <div class="card mb-3 mx-auto" style="max-width: 540px;">
                         <div class="row g-0">
                         <div class="col-md-4">
@@ -81,23 +81,39 @@
                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card mb-3 mx-auto" style="max-width: 540px;">
-                        <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="..." class="img-fluid rounded-start" alt="...">
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    <div>
+                        <div class="card mb-3 mx-auto" style="max-width: 540px;">
+                            <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="..." class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>    
+                    <div>
+                        <div class="card mb-3 mx-auto" style="max-width: 540px;">
+                            <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="..." class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
             </div>
         </div>
         <!--Modal Registro-->
@@ -111,8 +127,11 @@
                 <div class="modal-body">
                     <div class="bg-white rounded-3 mx-auto">
                         <div class="mx-auto">
-                            <form action="cadastrar" method="POST">
+                            <form action="cadastrar" method="POST" id="formCad">
                                 @csrf
+                                <div class="alert alert-vermelho" style="display: none" id="alertasenha" role="alert">
+                                    Senhas não conferem!
+                                </div>
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Nome</label>
                                     <input type="text" class="form-control" id="nome" name="nome" aria-describedby="emailHelp">
@@ -131,7 +150,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-azulclaro1 text-white" data-bs-dismiss="modal">Cancelar</button>
-                                    <button type="submit" class="btn btn-azulclaro1 text-white">Cadastrar</button>
+                                    <button type="button" onclick="validar()" class="btn btn-azulclaro1 text-white">Cadastrar</button>
                                 </div>
                             </form>
                         </div>
