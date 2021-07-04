@@ -69,7 +69,7 @@
             </div>
             <div class="mx-auto w-75 bg-white rounded-3">
                 <div class="pt-2">
-                    <div class="card mb-3 mx-auto" style="max-width: 540px;">
+                    <div class="card mb-3 mx-auto" style="max-width: 1340px;">
                         <div class="row g-0">
                         <div class="col-md-4">
                             <img src="..." class="img-fluid rounded-start" alt="...">
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="card mb-3 mx-auto" style="max-width: 540px;">
+                        <div class="card mb-3 mx-auto" style="max-width: 1340px;">
                             <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="..." class="img-fluid rounded-start" alt="...">
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="card mb-3 mx-auto" style="max-width: 540px;">
+                        <div class="card mb-3 mx-auto" style="max-width: 1340px;">
                             <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="..." class="img-fluid rounded-start" alt="...">
@@ -150,7 +150,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-azulclaro1 text-white" data-bs-dismiss="modal">Cancelar</button>
-                                    <button type="button" onclick="validar()" class="btn btn-azulclaro1 text-white">Cadastrar</button>
+                                    <button type="button" onclick="validar()" class="btn btn-azulclaro1 text-white" data-bs-target="#alertasenha" >Cadastrar</button>
                                 </div>
                             </form>
                         </div>

@@ -22,6 +22,7 @@
   --bs-azulclaro: #00aeff;
   --bs-azulclaro1: #0077ff;
   --bs-vermelho: #f86363;
+  --bs-verde-claro: #5df3a8;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -3041,6 +3042,36 @@ textarea.form-control-lg {
   border-color: #f86363;
 }
 
+.btn-verde-claro {
+  color: #000;
+  background-color: #5df3a8;
+  border-color: #5df3a8;
+}
+.btn-verde-claro:hover {
+  color: #000;
+  background-color: #75f5b5;
+  border-color: #6df4b1;
+}
+.btn-check:focus + .btn-verde-claro, .btn-verde-claro:focus {
+  color: #000;
+  background-color: #75f5b5;
+  border-color: #6df4b1;
+  box-shadow: 0 0 0 0.25rem rgba(79, 207, 143, 0.5);
+}
+.btn-check:checked + .btn-verde-claro, .btn-check:active + .btn-verde-claro, .btn-verde-claro:active, .btn-verde-claro.active, .show > .btn-verde-claro.dropdown-toggle {
+  color: #000;
+  background-color: #7df5b9;
+  border-color: #6df4b1;
+}
+.btn-check:checked + .btn-verde-claro:focus, .btn-check:active + .btn-verde-claro:focus, .btn-verde-claro:active:focus, .btn-verde-claro.active:focus, .show > .btn-verde-claro.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(79, 207, 143, 0.5);
+}
+.btn-verde-claro:disabled, .btn-verde-claro.disabled {
+  color: #000;
+  background-color: #5df3a8;
+  border-color: #5df3a8;
+}
+
 .btn-outline-azulclaro {
   color: #00aeff;
   border-color: #00aeff;
@@ -3113,6 +3144,31 @@ textarea.form-control-lg {
 }
 .btn-outline-vermelho:disabled, .btn-outline-vermelho.disabled {
   color: #f86363;
+  background-color: transparent;
+}
+
+.btn-outline-verde-claro {
+  color: #5df3a8;
+  border-color: #5df3a8;
+}
+.btn-outline-verde-claro:hover {
+  color: #000;
+  background-color: #5df3a8;
+  border-color: #5df3a8;
+}
+.btn-check:focus + .btn-outline-verde-claro, .btn-outline-verde-claro:focus {
+  box-shadow: 0 0 0 0.25rem rgba(93, 243, 168, 0.5);
+}
+.btn-check:checked + .btn-outline-verde-claro, .btn-check:active + .btn-outline-verde-claro, .btn-outline-verde-claro:active, .btn-outline-verde-claro.active, .btn-outline-verde-claro.dropdown-toggle.show {
+  color: #000;
+  background-color: #5df3a8;
+  border-color: #5df3a8;
+}
+.btn-check:checked + .btn-outline-verde-claro:focus, .btn-check:active + .btn-outline-verde-claro:focus, .btn-outline-verde-claro:active:focus, .btn-outline-verde-claro.active:focus, .btn-outline-verde-claro.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(93, 243, 168, 0.5);
+}
+.btn-outline-verde-claro:disabled, .btn-outline-verde-claro.disabled {
+  color: #5df3a8;
   background-color: transparent;
 }
 
@@ -4437,6 +4493,15 @@ textarea.form-control-lg {
   color: #772f2f;
 }
 
+.alert-verde-claro {
+  color: #256143;
+  background-color: #dffdee;
+  border-color: #cefbe5;
+}
+.alert-verde-claro .alert-link {
+  color: #1e4e36;
+}
+
 @-webkit-keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -4752,6 +4817,20 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #953b3b;
   border-color: #953b3b;
+}
+
+.list-group-item-verde-claro {
+  color: #256143;
+  background-color: #dffdee;
+}
+.list-group-item-verde-claro.list-group-item-action:hover, .list-group-item-verde-claro.list-group-item-action:focus {
+  color: #256143;
+  background-color: #c9e4d6;
+}
+.list-group-item-verde-claro.list-group-item-action.active {
+  color: #fff;
+  background-color: #256143;
+  border-color: #256143;
 }
 
 .btn-close {
@@ -5738,6 +5817,13 @@ textarea.form-control-lg {
   color: #f98282;
 }
 
+.link-verde-claro {
+  color: #5df3a8;
+}
+.link-verde-claro:hover, .link-verde-claro:focus {
+  color: #7df5b9;
+}
+
 .ratio {
   position: relative;
   width: 100%;
@@ -6095,6 +6181,10 @@ textarea.form-control-lg {
 
 .border-vermelho {
   border-color: #f86363 !important;
+}
+
+.border-verde-claro {
+  border-color: #5df3a8 !important;
 }
 
 .border-white {
@@ -6906,6 +6996,10 @@ textarea.form-control-lg {
   color: #f86363 !important;
 }
 
+.text-verde-claro {
+  color: #5df3a8 !important;
+}
+
 .text-white {
   color: #fff !important;
 }
@@ -6940,6 +7034,10 @@ textarea.form-control-lg {
 
 .bg-vermelho {
   background-color: #f86363 !important;
+}
+
+.bg-verde-claro {
+  background-color: #5df3a8 !important;
 }
 
 .bg-body {

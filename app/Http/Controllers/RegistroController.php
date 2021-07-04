@@ -19,7 +19,7 @@ class RegistroController extends Controller
 
         $usuario->save();
         
-        return view('home.home');
+        return view('home.registroconfirm');
 
     }
 }
